@@ -4,4 +4,8 @@
 
          process of data collection and storage from various sources and managing it to provide valuable business insights
 
-  
+         "El término “Data Warehousing” se refiere al proceso que consiste en recolectar y manipular datos provenientes de diversas fuentes, con el fin de recuperar informaciones valiosas para una empresa."
+
+
+  ![image](https://cdn.corporatefinanceinstitute.com/assets/data-warehousing1-1024x505.png)
+
