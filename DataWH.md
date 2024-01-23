@@ -21,3 +21,8 @@ Las tablas de un esquema de copo de nieve generalmente se normalizan en el terce
 Tipo de esquema de base de datos relacional que consta de una sola tabla de hechos central rodeada de tablas de dimensiones.
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/17724dc6-2134-43dc-a520-df4e09cc1271)
+
+
+Bibliografia: https://www.ibm.com/docs/es/ida/9.1.2?topic=schemas-star
+
+
