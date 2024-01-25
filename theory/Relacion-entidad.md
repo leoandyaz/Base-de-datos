@@ -11,6 +11,9 @@ Ejemplo 1
       
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/8622882f-37c2-47c1-ab45-a6a219868990)
 
+                CREATE TABLE LibroS (    ID INT UNIQUE NOT NULL PRIMARY KEY,    nombre VARCHAR                         (100),    Precio FLOAT,    IDGen INT UNIQUE NOT NULL,    FOREIGN KEY (IDGen)                         REFERENCES Generos(ID));
+                CREATE TABLE Generos (    ID INT UNIQUE NOT NULL PRIMARY KEY,    nombre VARCHAR                         (100));
+
 Ejemplo 2 
 
         Realiza el modelo entidad-relación para una tienda en línea.
