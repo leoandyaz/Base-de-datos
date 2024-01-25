@@ -68,6 +68,34 @@ Ejercicio universidad
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/35723226-3c65-4a41-beb5-9ad482e185b2)
 
+                 
+CREATE TABLE Alumnos (
+  	ID INT NOT NULL PRIMARY KEY,
+  	Nombre VARCHAR(50) NOT NULL,
+  	FECHA_NAC DATE(33) NOT NULL,
+  	Direccion VARCHAR(150) NOT NULL
+  );
+  
+ CREATE TABLE Docentes (
+  	ID INT NOT NULL UNIQUE PRIMARY KEY,
+  	Nombre VARCHAR(50) NOT NULL,
+  	Contacto VARCHAR(50) NOT NULL,
+    Especializacion VARCHAR(100) NOT NULL
+  );
+  
+  CREATE TABLE Inscritos (
+    ID INT NOT NULL PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+  	Creditos FLOAT(4) NOT NULL,
+    IDDoc INT UNIQUE NOT NULL,
+    IDAlu INT UNIQUE NOT NULL,
+    FOREIGN KEY (IDDoc) REFERENCES Docenetes (ID),    
+    FOREIGN KEY (IDAlu) REFERENCES Alumnos (ID)
+  );
+  
+
+
+
 Mdle
 
         La editorial tiene varias sucursales, con su domicilio, teléfono y un código de sucursal.
