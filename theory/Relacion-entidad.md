@@ -21,6 +21,10 @@ Ejemplo 2
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/7cdd4eb6-6c97-4b8e-beaf-645363736eeb)
 
+             Create table Productos (    ID INT UNIQUE NOT NULL PRIMARY KEY,    Nombre VARCHAR(50),    Descripcion VARCHAR(150),    Precio FLOAT (4)  );    
+             Create table Clientes (    ID INT UNIQUE NOT NULL PRIMARY KEY,    Nombre VARCHAR(50),    Direccion VARCHAR(150),    Correo VARCHAR (33)  );      
+             CREATE TABLE Compras (	ID INT UNIQUE NOT NULL PRIMARY KEY,       Fecha DATE (33),    IDProd INT UNIQUE NOT NULL,        IDClient INT UNIQUE NOT NULL,    FOREIGN KEY (IDprod) REFERENCES Productos(ID),    FOREIGN KEY (IDclient) REFERENCES Clientes(ID)        ); 
+
 Ejercicio universidad
 
       Realiza el modelo entidad-relación para una universidad. 
