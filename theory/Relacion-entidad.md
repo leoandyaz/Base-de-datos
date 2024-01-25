@@ -11,7 +11,8 @@ Ejemplo 1
       
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/8622882f-37c2-47c1-ab45-a6a219868990)
 
-                CREATE TABLE Libros (    ID INT UNIQUE NOT NULL PRIMARY KEY,    
+                CREATE TABLE Libros (    
+                        ID INT UNIQUE NOT NULL PRIMARY KEY,    
                         nombre VARCHAR(100),    
                         Precio FLOAT,    
                         IDGen INT UNIQUE NOT NULL,    
@@ -21,8 +22,8 @@ Ejemplo 1
                 
                 CREATE TABLE Generos (
                         ID INT UNIQUE NOT NULL PRIMARY KEY,
-                        nombre VARCHAR (100))
-                ;
+                        nombre VARCHAR (100)
+                );
 
 Ejemplo 2 
 
@@ -34,11 +35,15 @@ Ejemplo 2
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/7cdd4eb6-6c97-4b8e-beaf-645363736eeb)
 
-             Create table Productos (    ID INT UNIQUE NOT NULL PRIMARY KEY,    
-             Nombre VARCHAR(50),    Descripcion VARCHAR(150),    Precio FLOAT (4)  
+             Create table Productos (    
+             ID INT UNIQUE NOT NULL PRIMARY KEY,    
+             Nombre VARCHAR(50),    
+             Descripcion VARCHAR(150),    
+             Precio FLOAT (4)  
              ); 
              
-             Create table Clientes (    ID INT UNIQUE NOT NULL PRIMARY KEY,   
+             Create table Clientes (    
+                     ID INT UNIQUE NOT NULL PRIMARY KEY,   
                      Nombre VARCHAR(50),    
                      Direccion VARCHAR(150),    
                      Correo VARCHAR (33)  
