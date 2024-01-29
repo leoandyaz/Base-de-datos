@@ -4,10 +4,13 @@ Diagrama Entidad/Relación*
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/d2d9cbd3-c64d-4e92-bafd-68f77104c02a)
 
-     CREATE TABLE fabricante (ID INT(10),  
-     Nombre VARCHAR(100)  );   
+     CREATE TABLE fabricante (
+     ID INT(10) PRIMARY KEY,  
+     Nombre VARCHAR(100)  
+     );   
      
-     CREATE TABLE producto( ID INT(10),  
+     CREATE TABLE producto( 
+     ID INT(10) PRIMARY KEY,  
      Nombre VARCHAR(100),  
      Precio DOUBLE,   
      codigo_fabricante INT(10),
@@ -18,6 +21,18 @@ Diagrama Entidad/Relación*
  Listado: Fabricante*
 
  ![image](https://github.com/leoandyaz/data-base/assets/133395965/b66c8ba8-eb1a-47b5-b779-cea038c90f22)
+
+     INSERT INTO fabricante (ID,Nombre)
+     VALUES 
+     (1,'Asus'),
+     (2,'Lenovo'),
+     (3,'Hewlett - Packard'),
+     (4,'Samsung'),
+     (5,'Seagate'),
+     (6,'Crucial'),
+     (7,'Giganyte'),
+     (8,'Huawei'),
+     (9,'Xiamoi');
 
 Listado: Productos*
 
