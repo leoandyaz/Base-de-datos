@@ -4,16 +4,16 @@ Diagrama Entidad/Relación*
 
 ![image](https://github.com/leoandyaz/data-base/assets/133395965/d2d9cbd3-c64d-4e92-bafd-68f77104c02a)
 
-     CREATE TABLE fabricante (
-     ID INT(10) PRIMARY KEY,  
-     Nombre VARCHAR(100)  
+      CREATE TABLE fabricante (
+     ID INT(10) PRIMARY KEY NOT NULL UNIQUE,  
+     Nombre VARCHAR(100) NOT NULL 
      );   
      
-     CREATE TABLE producto( 
-     ID INT(10) PRIMARY KEY,  
-     Nombre VARCHAR(100),  
-     Precio DOUBLE,   
-     codigo_fabricante INT(10),
+       CREATE TABLE producto( 
+     ID INT(10) PRIMARY KEY NOT NULL UNIQUE,  
+     Nombre VARCHAR(100 NOT NULL),  
+     Precio DOUBLE NOT NULL,   
+     codigo_fabricante INT(10) NOT NULL,
      FOREIGN KEY (codigo_fabricante) REFERENCES fabricante(ID)          
      );
 
