@@ -11,7 +11,7 @@ Diagrama Entidad/Relación*
      
        CREATE TABLE producto( 
      ID INT(10) PRIMARY KEY NOT NULL UNIQUE,  
-     Nombre VARCHAR(100 NOT NULL),  
+     Nombre VARCHAR(100) NOT NULL,  
      Precio DOUBLE NOT NULL,   
      codigo_fabricante INT(10) NOT NULL,
      FOREIGN KEY (codigo_fabricante) REFERENCES fabricante(ID)          
