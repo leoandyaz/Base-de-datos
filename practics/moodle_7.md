@@ -18,8 +18,7 @@
        SELECT fabricante.nombre AS fabricante, MIN(PRECIO), MAX(PRECIO), AVG(PRECIO) ,COUNT(producto.id) AS numero_productos
        FROM fabricante
        LEFT JOIN producto ON fabricante.id = producto.codigo_fabricante
-       GROUP BY fabricante.id
-       WHERE  =;
+       GROUP BY fabricante.id;
 
 * Muestra el nombre de cada fabricante, junto con el precio máximo, precio mínimo, precio medio y el número total de productos de los fabricantes que tienen un precio medio superior a 200€. Es necesario mostrar el nombre del fabricante.
 
