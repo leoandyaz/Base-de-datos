@@ -64,5 +64,10 @@
               FROM Fabricante
               WHERE Nombre = "LENOVO"
               )
+            )  
+            AND Codigo_fabricante = (
+              SELECT Codigo
+              FROM Fabricante
+              WHERE Nombre = "LENOVO"
             );
   
