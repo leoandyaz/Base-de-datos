@@ -53,3 +53,16 @@
             );
       
 * Lista el nombre del producto más caro del fabricante Lenovo.
+
+          SELECT Nombre
+          FROM Producto
+          WHERE Precio = (
+            SELECT MAX (Precio)
+            FROM Producto
+            WHERE Codigo_fabricante = (
+              SELECT Codigo
+              FROM Fabricante
+              WHERE Nombre = "LENOVO"
+              )
+            );
+  
