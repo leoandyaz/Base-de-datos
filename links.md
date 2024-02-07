@@ -1,3 +1,6 @@
+Simulador...
+
+https://www.db-fiddle.com/
 
 Editor...
 
@@ -8,10 +11,10 @@ Sintaxis...
 https://www.w3schools.com/sql/default.asp
 
 
-Exercices
+Exercices...
 
 https://sqlzoo.net/
 
-Theory
+Theory...
 
 https://sqlbolt.com/
