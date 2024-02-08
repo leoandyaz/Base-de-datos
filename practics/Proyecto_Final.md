@@ -26,41 +26,36 @@ Una pieza sólo puede pertenecer a una categoría.
 ![image](https://github.com/leoandyaz/Base-de-datos/assets/133395965/a2ecbc88-07b2-4468-94a0-475b4ce28a1e)
 
 
--- Tabla Proveedor
-CREATE TABLE Proveedor (
-    codigo_proveedor INT PRIMARY KEY,
-    nombre VARCHAR(255),
-    direccion VARCHAR(255),
-    ciudad VARCHAR(100),
-    provincia VARCHAR(100)
-);
 
--- Tabla Pieza
-CREATE TABLE Pieza (
-    codigo_pieza INT PRIMARY KEY,
-    nombre VARCHAR(255),
-    color VARCHAR(50),
-    precio DECIMAL(10, 2),
-    codigo_categoria INT,
-    FOREIGN KEY (codigo_categoria) REFERENCES Categoria(codigo_categoria)
-);
-
--- Tabla Suministro
-CREATE TABLE Suministro (
-    codigo_proveedor INT,
-    codigo_pieza INT,
-    cantidad INT,
-    fecha DATE,
-    PRIMARY KEY (codigo_proveedor, codigo_pieza, fecha),
-    FOREIGN KEY (codigo_proveedor) REFERENCES Proveedor(codigo_proveedor),
-    FOREIGN KEY (codigo_pieza) REFERENCES Pieza(codigo_pieza)
-);
-
--- Tabla Categoria
-CREATE TABLE Categoria (
-    codigo_categoria INT PRIMARY KEY,
-    nombre VARCHAR(100)
-);
-
-
-
+        CREATE TABLE Proveedor (
+            ID INT PRIMARY KEY,
+            nombre VARCHAR(255),
+            direccion VARCHAR(255),
+            ciudad VARCHAR(100),
+            provincia VARCHAR(100)
+        );
+        
+        CREATE TABLE Categoria (
+            ID INT PRIMARY KEY UNIQUE,
+            nombre VARCHAR(100)
+        );
+        
+        CREATE TABLE Pieza (
+            ID INT PRIMARY KEY,
+            nombre VARCHAR(255),
+            color VARCHAR(50),
+            precio DECIMAL(10),
+          	IDcat INT UNIQUE NOT NULL,
+            FOREIGN KEY (IDcat) REFERENCES Categoria(ID) 
+        );
+        
+        
+        CREATE TABLE Suministro (
+         	cantidad INT,
+            fecha DATE,
+         	IDpie INT UNIQUE NOT NULL,        
+            IDpro INT UNIQUE NOT NULL,
+            FOREIGN KEY (IDpie) REFERENCES Pieza(ID),
+            FOREIGN KEY (IDpro) REFERENCES Proveedor(ID)
+            );
+        
