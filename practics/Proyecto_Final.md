@@ -23,6 +23,7 @@ De cada pieza conocemos un código que será único, nombre, color, precio y cat
 * Pueden existir varias categorías y para cada categoría hay un nombre y un código de categoría único.
 Una pieza sólo puede pertenecer a una categoría.
 
+![image](https://github.com/leoandyaz/Base-de-datos/assets/133395965/603905f7-5da2-4583-8664-c020fb5a6a6b)
 
 
 -- Tabla Proveedor
